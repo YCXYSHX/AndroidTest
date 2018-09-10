@@ -6,17 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button Jump = findViewById(R.id.JUMP);
-        Jump.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_main2);
+        Button Back = findViewById(R.id.Back);
+        Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                Intent intent = new Intent(Main2Activity.this,MainActivity.class);
                 startActivity(intent);
             }
         });
